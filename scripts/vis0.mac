@@ -1,0 +1,6 @@
+/vis/open OGL 1000x400-0+0
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 90 0
+/vis/viewer/addCutawayPlane 0 0 23 cm -1 0 0
+/vis/viewer/set/targetPoint 0 0 50 cm
+/vis/viewer/zoomTo 5

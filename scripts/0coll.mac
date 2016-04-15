@@ -1,0 +1,20 @@
+/random/setSeeds 122 222
+
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Circle
+
+# radioactive source Am241
+/gps/ang/type iso
+/gps/pos/radius 3.75 mm
+/gps/pos/centre 0. 0. 85. cm # 5cm above the slow, unit 0 (top PDC is at 80 cm)
+/gps/ang/maxtheta 11 deg
+
+# to use the recorded Am241 spectrum
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/file ../spectrum_Am241.dat
+/gps/hist/inter	Lin
+
+/run/beamOn   10000000 # testing the rate
+#/control/loop ../scatterpiecerotation.mac step 0. 360. 0.1

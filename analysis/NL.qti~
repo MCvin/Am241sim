@@ -1,0 +1,143 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Table1	20	5	2013-12-02 10:17
+geometry	0	0	722	387	
+header	1[X]	2[Y]	NL in Fast[Y]	3[Y]	NL in Fast different binning[Y]
+ColWidth	100	100	134	100	100	
+<com>
+<col nr="2">
+col("2")/col("1")
+</col>
+<col nr="4">
+col("3")/col("1")
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	5	1.43	0.286	2.38	0.476
+1	8	4.52	0.565	5.45	0.68125
+2	10	6.64	0.664	7.37	0.737
+3	15	11.91	0.794	12.34	0.8226666666667
+4	20	17.2	0.86	17.55	0.8775
+5	30	27.62	0.9206666666667	28.09	0.9363333333333
+6	40	37.93	0.94825	38.38	0.9595
+7	50	48.48	0.9696	48.45	0.969
+8	60	58	0.9666666666667	58.32	0.972
+9	80	78.1	0.97625	79.46	0.99325
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	2013-12-02 10:26
+geometry	722	0	541	469	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	523	406
+<PageGeometry>0.00938086	0.0118765	0.981238	0.964371</PageGeometry>
+PlotTitle	Non linearity	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Energy (keV)	Ereal/Emeasured		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+TitleFont	Ubuntu	13	75	0	0	0
+ScaleFont0	Ubuntu	11	75	0	0	0
+ScaleFont1	Ubuntu	11	75	0	0	0
+ScaleFont2	Ubuntu	11	75	0	0	0
+ScaleFont3	Ubuntu	11	75	0	0	0
+AxisFont0	Ubuntu	11	50	0	0	0
+AxisFont1	Ubuntu	11	50	0	0	0
+AxisFont2	Ubuntu	11	50	0	0	0
+AxisFont3	Ubuntu	11	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_NL in Fast	7	5	#000000	0	1	7	1	#000000	#000000	0	#000000	14	2	0	0	9	1
+<Function>
+<Type>0</Type>
+<Title>F2</Title>
+<Expression>1.001 - 0.486 * exp(-0.0902 * x)</Expression>
+<Variable>x</Variable>
+<Range>5	80</Range>
+<Points>100</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+curve	Table1_1	Table1_NL in Fast different binning	2	1	#00ff00	0	1	7	2	#00ff00	#00ff00	0	#000000	14	1	2	0	0	19	1
+scale	0	0.2	1.1	0	10	5	0	0
+scale	1	0.2	1.1	0	10	5	0	0
+scale	2	0	90	0	10	5	0	0
+scale	3	0	90	0	10	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>29.708737864078</x>
+<y>0.70338983050847</y>
+<right>85.8495145631068</right>
+<bottom>0.498983050847458</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)NL in 1cm<sup>3</sup> plastic
+\l(3)%(3)
+</Text>
+<Font>Ubuntu	11	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
