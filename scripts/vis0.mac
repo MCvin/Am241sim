@@ -1,6 +1,12 @@
 /vis/open OGL 1000x400-0+0
 /vis/drawVolume
 /vis/viewer/set/viewpointThetaPhi 90 0
-/vis/viewer/addCutawayPlane 0 0 23 cm -1 0 0
+#/vis/viewer/addCutawayPlane 0 0 23 cm -1 0 0
 /vis/viewer/set/targetPoint 0 0 50 cm
 /vis/viewer/zoomTo 5
+
+/vis/scene/add/trajectories
+/vis/scene/add/hits
+/vis/scene/endOfEventAction accumulate 1000
+
+/control/execute ../scripts/run1.mac

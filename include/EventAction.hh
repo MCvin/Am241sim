@@ -33,14 +33,21 @@ class EventAction : public G4UserEventAction
       float E;
       float Px, Py, Pz;
       float Dx, Dy, Dz;
+      float Polx, Poly, Polz;
     };
     struct Det_event{
-	  int nhits; //Number of hits determines the size of arrays when writing the TTree
-	  float EdepTot;
-	  float Edep[1000000];
-	  float Px[1000000];
-	  float Py[1000000];
-	  float Pz[1000000];
+      int nhits; //Number of hits determines the size of arrays when writing the TTree
+      float EdepTot;
+      float Edep[1000000];
+      float Px[1000000];
+      float Py[1000000];
+      float Pz[1000000];
+      float Dx[1000000];
+      float Dy[1000000];
+      float Dz[1000000];
+      float Polx[1000000];
+      float Poly[1000000];
+      float Polz[1000000];
       inline void SetAddress(TBranch* branch){
         TObjArray* leaf_array = branch->GetListOfLeaves();
         ((TLeaf*)leaf_array->At(0))->SetAddress(&nhits);
@@ -49,6 +56,12 @@ class EventAction : public G4UserEventAction
         ((TLeaf*)leaf_array->At(3))->SetAddress(Px);
         ((TLeaf*)leaf_array->At(4))->SetAddress(Py);
         ((TLeaf*)leaf_array->At(5))->SetAddress(Pz);
+        ((TLeaf*)leaf_array->At(3))->SetAddress(Dx);
+        ((TLeaf*)leaf_array->At(4))->SetAddress(Dy);
+        ((TLeaf*)leaf_array->At(5))->SetAddress(Dz);
+        ((TLeaf*)leaf_array->At(3))->SetAddress(Polx);
+        ((TLeaf*)leaf_array->At(4))->SetAddress(Poly);
+        ((TLeaf*)leaf_array->At(5))->SetAddress(Polz);
       }
     };
     void WriteToASCII(const G4Event*);

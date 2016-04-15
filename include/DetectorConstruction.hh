@@ -19,9 +19,6 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
   private:
     G4double WorldSize;
-
-	void PlaceCopy(G4RotationMatrix*, G4double, G4double, G4double, G4LogicalVolume*, 
-				   G4String, G4LogicalVolume*, G4int);
 };
 
 #endif

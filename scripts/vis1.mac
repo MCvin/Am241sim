@@ -23,9 +23,14 @@
 #/gps/ang/maxtheta 9.10 deg  # opening angle of the source for 1 collimator
 #/gps/ang/maxtheta 11.00 deg  # opening angle of the source for 6 collimators
 
-# scatter piece
-/gps/pos/centre 0. -4.825 85.00 cm  # scatter piece, unit 0
-/gps/pos/rot2 0 0 1		    # source tilted by 90 deg
+# scatter piece 2012
+#/gps/pos/centre 0. -4.825 85.00 cm  # scatter piece, unit 0
+#/gps/pos/rot2 0 0 1		    # source tilted by 90 deg
+#/gps/ang/maxtheta 20. deg
+
+# scatter piece 2016
+/gps/pos/centre 4.825 0. 85.00 cm  # scatter piece, unit 0
+/gps/pos/rot1 0 0 1		    # source tilted by 90 deg
 /gps/ang/maxtheta 20. deg
 
 /gps/ene/mono 59.5 keV
