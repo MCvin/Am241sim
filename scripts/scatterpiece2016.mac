@@ -1,0 +1,24 @@
+/random/setSeeds 123 222
+
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Circle
+
+# radioactive source Am241
+/gps/ang/type iso
+/gps/pos/radius 3.75 mm
+
+# scatter piece 2016
+/gps/pos/centre 4.825 0. 85.00 cm  # scatter piece, unit 0
+/gps/pos/rot1 0 0 1		    # source tilted by 90 deg
+/gps/ang/maxtheta 20. deg
+
+# to use the recorded Am241 spectrum
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/file ../spectrum_Am241.dat
+/gps/hist/inter	Lin
+
+/run/beamOn 1000       # for vis
+#/run/beamOn 1000000     # for test
+#/run/beamOn 10000000000 # for the scatter piece

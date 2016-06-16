@@ -9,4 +9,5 @@
 /vis/scene/add/hits
 /vis/scene/endOfEventAction accumulate 1000
 
-/control/execute ../scripts/run1.mac
+/control/execute ../scripts/source2016.mac
+#/control/execute ../scripts/scatterpiece2016.mac

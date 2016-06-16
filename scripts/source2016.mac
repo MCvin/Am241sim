@@ -8,9 +8,7 @@
 /gps/ang/type iso
 /gps/pos/radius 3.75 mm
 
-# scatter piece
-/gps/pos/centre 0. -4.825 85.00 cm  # scatter piece, unit 0
-/gps/pos/rot2 0 0 1		    # source tilted by 90 deg
+/gps/pos/centre 0. 0. 85. cm
 /gps/ang/maxtheta 20. deg
 
 # to use the recorded Am241 spectrum
@@ -19,8 +17,6 @@
 /gps/hist/file ../spectrum_Am241.dat
 /gps/hist/inter	Lin
 
-#/tracking/verbose 1
-#/event/verbose 2
-
-#/run/beamOn 1000
-/run/beamOn 1000000000 # for the scatter piece
+/run/beamOn 1000       # for vis
+#/run/beamOn 1000000     # for test
+#/run/beamOn 10000000000 # for the scatter piece
